@@ -1,6 +1,7 @@
 package it.esteco.bowling;
 
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
@@ -30,5 +31,14 @@ public class GameScoreTest {
     public void allOnes() throws Exception {
         rollMany(20, 1);
         assertEquals(20, game.score());
+    }
+
+    @Test
+    public void oneSpare() throws Exception {
+        game.roll(5);
+        game.roll(5);
+        game.roll(4);
+        rollMany(17, 0);
+        assertEquals(18, game.score());
     }
 }
