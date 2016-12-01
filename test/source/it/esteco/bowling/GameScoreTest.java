@@ -48,10 +48,14 @@ public class GameScoreTest {
 
     @Test
     public void oneStrike() throws Exception {
-        game.roll(10);
+        rollStrike();
         game.roll(5);
         game.roll(6);
         rollMany(14, 0);
         assertEquals(32, game.score());
+    }
+
+    private void rollStrike() {
+        game.roll(10);
     }
 }
