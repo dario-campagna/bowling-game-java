@@ -54,9 +54,9 @@ public class GameScoreTest {
     public void oneStrike() throws Exception {
         rollStrike();
         game.roll(5);
-        game.roll(6);
-        rollMany(14, 0);
-        assertEquals(32, game.score());
+        game.roll(2);
+        rollMany(16, 0);
+        assertEquals(24, game.score());
     }
 
     @Test
