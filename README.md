@@ -1,3 +1,3 @@
 # Bowling Game Kata
 
-Bowling game TDD kata implemented in Java.
+[Bowling game TDD kata](http://butunclebob.com/ArticleS.UncleBob.TheBowlingGameKata) implemented in Java.
